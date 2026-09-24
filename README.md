@@ -43,7 +43,7 @@ I'm **Ilia Javan**, and I implemented the 3D graphics pipeline:
 | Contributor | Responsibilities |
 | --- | --- |
 | **Ilia Javan** | Depth projection, triangle rasterization, quaternion rotation, mesh rendering, backface culling, and shading |
-| **Khaleel** | Background and screens, game states, ball physics and collisions, PS/2 input, paddle rendering, opponent behavior, and scoring |
+| **Khaleel Khaki** | Background and screens, game states, ball physics and collisions, PS/2 input, paddle rendering, opponent behavior, and scoring |
 
 We integrated the graphics pipeline with the game logic to display the ball's position and spin during gameplay.
 
