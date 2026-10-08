@@ -15,7 +15,7 @@ Players control a paddle with a mouse and return a ball as it travels toward and
 - **Input:** interrupt-driven PS/2 mouse control.
 - **Victory animation:** a rotating, shaded golden coin.
 
-## My contribution
+## Ilia's contribution
 
 I'm **Ilia Javan**, and I implemented the 3D graphics pipeline:
 
@@ -27,6 +27,10 @@ I'm **Ilia Javan**, and I implemented the 3D graphics pipeline:
 | Mesh rendering | Vertex transformations and triangle-based object rendering |
 | Backface culling | Projected triangle winding to skip faces pointing away from the viewer |
 | Shading | Face normals and a reference light direction to calculate brightness |
+
+## Khaleel's contribution
+
+I'm **Khaleel**, and...
 
 ## Engineering decisions
 
