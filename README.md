@@ -14,6 +14,7 @@ Players control a paddle with a mouse and return a ball as it travels toward and
 - **Display:** 320 × 240 VGA output with double buffering synchronized to vertical sync.
 - **Input:** interrupt-driven PS/2 mouse control.
 - **Victory animation:** a rotating, shaded golden coin.
+- **Physics:** arcade style, 
 
 ## Ilia's contribution
 
@@ -30,7 +31,16 @@ I'm **Ilia Javan**, and I implemented the 3D graphics pipeline:
 
 ## Khaleel's contribution
 
-I'm **Khaleel**, and...
+I'm **Khaleel Khaki**, and I implemented the core gameplay systems:
+
+| Component | Implementation |
+| --- | --- |
+| Game loop & state management | Real-time game loop with start, gameplay, win/lose, and restart states |
+| Ball physics | Ball movement with spin mechanics and collision detection |
+| Paddle control | PS2 mouse interrupt-driven paddle control |
+| Enemy AI | Level-based enemy AI with progressively increasing difficulty |
+| Scoring | Player scoring and high-score tracking |
+| VGA rendering | Start, gameplay, win, and lose screen rendering to the VGA buffer |
 
 ## Engineering decisions
 
@@ -41,6 +51,15 @@ I'm **Khaleel**, and...
 **Quaternion orientation.** Quaternions track orientation, and rotation matrices transform mesh vertices for rendering.
 
 **Cull before rasterization.** Backface culling avoids filling triangles facing away from the viewer.
+
+**Real-time game loop.** A centralized game loop manages input, physics, collision detection, AI, scoring, and rendering to maintain responsive gameplay.
+
+**Interrupt-driven input.** PS2 mouse interrupts provide responsive paddle control without continuously polling for input.
+
+**Progressive AI difficulty.** Enemy AI increases in difficulty across levels, providing a gradual challenge while maintaining consistent core gameplay mechanics.
+
+**Spin-based ball physics.** Paddle collisions incorporate spin to influence the ball's trajectory and make gameplay more dynamic.
+
 
 ## Teamwork
 
